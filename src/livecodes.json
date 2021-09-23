@@ -1,0 +1,37 @@
+{
+  "title": "React Starter Demo",
+  "description": "",
+  "tags": [],
+  "activeEditor": "script",
+  "markup": {
+    "language": "html",
+    "content": "<div id=\"app\">Loading...</div>\n"
+  },
+  "style": {
+    "language": "css",
+    "content": ".container,\n.container button {\n  text-align: center;\n  font: 1em sans-serif;\n}\n.logo {\n  width: 150px;\n}\n"
+  },
+  "script": {
+    "language": "jsx",
+    "content": "import React, { useState } from \"react\";\nimport ReactDOM from \"react-dom\";\n\nfunction App(props) {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div class=\"container\">\n      <h1>Hello, {props.name}!</h1>\n      <img className=\"logo\" src=\"https://dev.livecodes.io/livecodes/assets/templates/react.svg\" />\n      <p>You clicked {count} times.</p>\n      <button onClick={() => setCount(count + 1)}>Click me</button>\n    </div>\n  );\n}\nReactDOM.render(<App name=\"React\" />, document.querySelector(\"#app\"));\n"
+  },
+  "stylesheets": [],
+  "scripts": [],
+  "cssPreset": "",
+  "processors": {
+    "postcss": {
+      "autoprefixer": false,
+      "postcssPresetEnv": false,
+      "tailwindcss": false
+    }
+  },
+  "customSettings": {
+    "template": {
+      "data": {},
+      "prerender": true
+    }
+  },
+  "imports": {},
+  "types": {},
+  "version": "0.4.0"
+}
